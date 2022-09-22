@@ -7,7 +7,11 @@ class ToDoListManager {
       return this.toDoList;
    }
 
-   setToDoList(toDo) {
+   setToDoList(arrToDo) {
+      this.toDoList = arrToDo;
+   }
+
+   addToDo(toDo) {
       this.toDoList.push(toDo);
    }
 
@@ -22,15 +26,16 @@ class ToDoListManager {
    }
 
    sortAZ() {
-      //   const result = this.toDoList.sort((a, b) => {
-      //      console.log("a", a.content);
-      //      console.log("b", b.content);
-      //   });
-      //   console.log(this.toDoList);
-      //   console.log(result);
+      this.toDoList.sort(function (a, b) {
+         return a.content > b.content ? 1 : b.content > a.content ? -1 : 0;
+      });
    }
 
-   sortZA() {}
+   sortZA() {
+      this.toDoList.sort(function (a, b) {
+         return a.content > b.content ? -1 : b.content > a.content ? 1 : 0;
+      });
+   }
 }
 
 export default ToDoListManager;

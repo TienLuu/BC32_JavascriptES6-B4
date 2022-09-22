@@ -314,22 +314,22 @@ ul.todo li .buttons .complete:hover {
   color: #25b99a;
 }
 
-ul.todo#todo li .buttons .complete .fas {
+/* ul.todo#todo li .buttons .complete .fas {
   display: none;
 }
 
 ul.todo#todo li .buttons .complete .far {
   display: block;
-}
+} */
 
-ul.todo#completed li .buttons .complete .fas {
+ul.todo#completed li .buttons .complete .fa-solid {
   display: block;
   color: #25b99a;
 }
 
-ul.todo#completed li .buttons .complete .far {
+/* ul.todo#completed li .buttons .complete .far {
   display: none;
-}
+} */
 
 ul.todo#completed span {
   color: #25b99a;
